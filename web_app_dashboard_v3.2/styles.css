@@ -368,6 +368,69 @@ canvas#mobile-chart {
   p.right-arrow {
     display: none;
   }
+
+
+/* Message section */
+
+section.message {
+    border-top: solid 2px #cccccc;
+    border-bottom: 2px solid #cccccc;
+    padding-bottom: 20px;
+  }
+  
+  form.widget-container {
+    display: flex;
+    flex-direction: column;
+  }
+  input#userSearch {
+    width: 90%;
+    height: 60px;
+    border-radius: 10px;
+    border: solid 2px #cccccc;
+    background-color: #f5f5f5;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1em;
+    color: #afacac;
+  }
+  textarea#messageField {
+    width: 90%;
+    border-radius: 10px;
+    height: 150px;
+    border: solid 2px #cccccc;
+    background-color: #f5f5f5;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1em;
+    color: #afacac;
+  }
+  button#send {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: #7627a8;
+    /* border: solid 1px #cccccc; */
+    font-size: 1em;
+  }
+  button#send:hover {
+    background-color: #fdb229;
+    cursor: pointer;
+    color: black;
+    transition: opacity 0.2s ease-out, background 0.2s ease-out;
+  }
+
   
 
 /* media Q */
