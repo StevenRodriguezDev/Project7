@@ -281,16 +281,18 @@
        
 
         <!--messaging-->
-        <section>
+        <section class="message-user">
             <h3>Message User</h3>
             <form class="message-user-form" autocomplete="off">
                 <input type="text" placeholder="Search for User" class="form-field" id="userField">
                 <div class="autocomplete">
                     <ul class="autocomplete-users" id="autocomplete-users">
                     </ul>
-                    <textarea placeholder="Message for User" class="form-area" id="messageField" rows="6"></textarea>
-                    <button class="button" id="sendMessage">Send</button>
                 </div>
+                
+                <textarea placeholder="Message for User" class="form-area" id="messageField" rows="6"></textarea>
+                <button class="button" id="sendMessage">Send</button>
+                
             </form>
         </section>
 
@@ -366,5 +368,8 @@
     <!-- </div> -->
     <!--end of grid container-->
     <script> src="js/app.js"</script>
+    <script src="js/graphs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js" integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
 </body>
