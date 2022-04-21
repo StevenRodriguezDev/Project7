@@ -244,57 +244,59 @@
 
 
         <!-- recent activity-->
-        <section class="activity">
-            <h3> RECENT ACTIVITY </h3>
-            
-            <div class="members-container bottom-border">
-                <img src="images/member-1.jpg" alt="image of a member" class="victoria profile image">
-                <div class="members-text">
-                    <p>Victoria Chambers commented on <strong>WebApp's SEO tips</strong></p>
-                    <p>4 hours</p>
+        <section class="recent-activity">
+                <h3>Recent Activity</h3>
+                <div class="recent-activity-container">
+                    <img src="images/member-1.jpg" alt="" class="recent-activity-pic">
+                    <div class="recent-activity-text">
+                        <p>Victoria Chambers commented on <b>WebApp's SEO Tips</b></p>
+                        <p>4 hours ago</p>
+                    </div>
+                    <p class="arrow-btn">></p>
                 </div>
-                <p class="arrow"> > </p>
-            </div>
-
-            <div class="members-container bottom-border">
-                <img src="images/member-2.jpg" alt="image of a member" class="dale profile image">
-                <div class="members-text">
-                    <p>Dale Byrd liked the post <strong>Facebook' Changes for 2021</strong></p>
-                    <p>5 hours</p>
+                <div class="recent-activity-container">
+                    <img src="images/member-2.jpg" alt="" class="recent-activity-pic">
+                    <div class="recent-activity-text">
+                        <p>Dale Byrd liked the post <b>Facebook's Changes for 2021</b></p>
+                        <p>5 hours ago</p>
+                    </div>
+                    <p class="arrow-btn">></p>
                 </div>
-                <p class="arrow"> > </p>
-            </div>
-
-            <div class="members-container bottom-border">
-                <img src="images/member-3.jpg" alt="image of a member" class="dawn profile image">
-                <div class="members-text">
-                    <p>Dawn Wood commented on <strong>Facebook' Changes for 2021</strong></p>
-                    <p>5 hours</p>
+                <div class="recent-activity-container">
+                    <img src="images/member-3.jpg" alt="" class="recent-activity-pic">
+                    <div class="recent-activity-text">
+                        <p>Dawn Wood commented on <b>Facebook's Changes for 2021</b></p>
+                        <p>5 hours ago</p>
+                    </div>
+                    <p class="arrow-btn">></p>
                 </div>
-                <p class="arrow"> > </p>
-            </div>
-
-            <div class="members-container bottom-border">
-                <img src="images/member-4.jpg" alt="image of a member" class="dan profile image">
-                <div class="members-text">
-                    <p>Dawn Wood commented on <strong>WebApp's SEO tips</strong></p>
-                    <p>1 day ago</p>
+                <div class="recent-activity-container">
+                    <img src="images/member-4.jpg" alt="" class="recent-activity-pic">
+                    <div class="recent-activity-text">
+                        <p>Dan Oliver posted <b>WebApp's SEO Tips</b></p>
+                        <p>1 day ago</p>
+                    </div>
+                    <p class="arrow-btn">></p>
                 </div>
-                <p class="arrow"> > </p>
-            </div>
-        </section>
+            </section>
+       
 
         <!--messaging-->
-        <section class="message">
-            <h3>MESSAGE USER</h3>
-
-            <form class="widget-container">
-                <input type="text" placeholder="search for user" class="form-field" id="userSearch">
-
-                <textarea placeholder="message for user" class="form-area" id="messageField"></textarea>
-                <button class="button-primary" id="send">SEND</button>
+        <section>
+            <h3>Message User</h3>
+            <form class="message-user-form" autocomplete="off">
+                <input type="text" placeholder="Search for User" class="form-field" id="userField">
+                <div class="autocomplete">
+                    <ul class="autocomplete-users" id="autocomplete-users">
+                    </ul>
+                    <textarea placeholder="Message for User" class="form-area" id="messageField" rows="6"></textarea>
+                    <button class="button" id="sendMessage">Send</button>
+                </div>
             </form>
         </section>
+
+
+       
 
         <!-- settings -->
         <section class="settings">
