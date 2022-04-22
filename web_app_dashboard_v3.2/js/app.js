@@ -123,6 +123,30 @@ const emailSwitch = document.getElementById('email-switch');
 const profileSwitch = document.getElementById('profile-switch');
 const timezone = document.getElementById('timezone');
 
+const getChecked = (checkbox) => {
+    if (checkbox.checked === true) {
+        return 'true';
+    } else {
+        return 'false';
+    }
+};
+
+const saveBtnClick = saveBtn.addEventListener('click', (e) => {
+    localStorage.setItem('emailSwitch', getChecked(emailSwitch))
+    localStorage.setItem('profileSwitch', getChecked(profileSwitch))
+    localStorage.setItem('timezone',timezone.value)
+});
+
+const cancelBtnClick = cancelBtn.addEventListener('click', (e) => {
+    emailSwitch.checked = false;
+    profileSwitch.checked = false;
+    timezone.value = 'default';
+    localStorage.clear();
+});
+
+
+
+
 
 
 
