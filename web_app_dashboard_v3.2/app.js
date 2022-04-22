@@ -63,3 +63,16 @@ const autocompleteEvent = userField.addEventListener('input', (e) => {
       autocomplete.style.display = 'block';
   }
 });
+
+const autocompleteFocus = userField.addEventListener('focus', (e) => {
+    if (autocompleteChilds.length === 0) {
+        autocomplete.style.display = 'none';
+    } else {
+        autocomplete.style.display = 'block';
+    }
+});
+
+
+const autocompleteBlur = userField.addEventListener('blur', (e) => {
+  autocomplete.style.display = 'none';
+});
