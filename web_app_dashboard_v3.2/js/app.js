@@ -95,3 +95,12 @@ const addLi = (name) => {
         } 
     }
 };
+
+const removeLi = (name) => {
+    for (let i =0; i < autocompleteChilds.length; i++) {
+        const li = autocompleteChilds[i];
+        if (li.innerHTML === name) {
+
+        }
+    }
+};
