@@ -10,3 +10,18 @@ let trafficData = {
         tension: .4,
     }]
 }
+
+let trafficOptions = {
+    aspectRatio: 2.5,
+    scales: {
+        y: {
+            beginAtZero: true
+        }
+    },
+    plugins: {
+        legend: {
+            display: false
+        }
+    }
+};
+
