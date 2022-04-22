@@ -488,7 +488,7 @@ section {
 .select::after {
   content: "";
   position: absolute;
-  background: url(svgs/down-arrow.svg) no-repeat; 
+  /* background: url(svgs/down-arrow.svg) no-repeat;  */
   width: 1.5rem;
   height: 1.5rem;
   top: 1rem;
