@@ -25,3 +25,11 @@ let trafficOptions = {
     }
 };
 
+let trafficChart = new Chart(trafficCanvas, {
+    type: 'line',
+    date: trafficData,
+    options: trafficOptions
+});
+
+
+
