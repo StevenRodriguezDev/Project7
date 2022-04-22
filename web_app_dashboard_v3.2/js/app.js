@@ -104,3 +104,26 @@ const removeLi = (name) => {
         }
     }
 };
+
+const autocompleteTypeName = autocompleteUl.addEventListener('click', (e) => {
+    const name = e.target.innerHTML;
+    userField.value = name;
+    for (let i = 0; i < autocompleteChilds.length; i++) {
+        const li = autocompleteChilds[i];
+        if (li.innerHTML !== name) {
+            li.remove();
+        } 
+    }
+});
+
+const saveBtn = document.getElementById('save');
+const cancelBtn = document.getElementById('cancel');
+
+const emailSwitch = document.getElementById('email-switch');
+const profileSwitch = document.getElementById('profile-switch');
+const timezone = document.getElementById('timezone');
+
+
+
+
+
