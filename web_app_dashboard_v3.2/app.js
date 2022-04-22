@@ -14,6 +14,20 @@ const user = document.querySelector("#userField");
 const message = document.querySelector("#messageField");
 const sendBtn = document.querySelector("#sendMessage");
 
+sendBtn.addEventListener("click", (e) => {
+  if (user.value === "" && message.value === "") {
+      alert("Please fill out the user and the message fields before sending");
+  } else if (user.value === "") {
+      alert("Please fill out the user field before sending");
+  } else if (message.value === "") {
+      alert("Please fill out the message field before sending");
+  } else {
+      alert(`Message successfully sent to: ${user.value}`);
+      user.value = "";
+      message.value = "";
+  }
+});
+
 const bell = document.querySelector(".bell");
 const dropdown = document.querySelector(".dropdown");
 
@@ -25,3 +39,27 @@ const bellClick = bell.addEventListener("click", (e) => {
     }
 });
 
+const usernames = ['Victoria Chambers', 'Dale Byrd', 'Dawn Wood', 'Dan Oliver'];
+const userField = document.querySelector('#userField');
+const autocomplete = document.querySelector('.autocomplete');
+const autocompleteUl = document.querySelector('.autocomplete-users');
+let autocompleteChilds = document.querySelectorAll('.autocomplete-users li');
+
+
+const autocompleteEvent = userField.addEventListener('input', (e) => {
+  const userInput = userField.value.toLowerCase();
+  for (let i = 0; i < usernames.length; i++) {
+      const usernamesLowerCase = usernames[i].toLowerCase();
+      if (usernamesLowerCase.includes(userInput) & userInput !== '') {
+          addLi(usernames[i]);
+      } else {
+          removeLi(usernames[i]);
+      }
+  }
+  autocompleteChilds = document.querySelectorAll('.autocomplete-users li');
+  if (autocompleteChilds.length === 0) {
+      autocomplete.style.display = 'none';
+  } else {
+      autocomplete.style.display = 'block';
+  }
+});
