@@ -26,7 +26,7 @@ canvas {
   --light-gray: #d3d3d3;
   --purple: #7477bf;
   --dark-purple: #4d4c72;
-  --green: #81c98f;
+  --green: #0bd82d;
 }
 
 :root {
@@ -132,6 +132,8 @@ li {
 
 .bell-svg:hover {
   animation: ring 1s;
+  color: #81c98f;
+
 }
 
 .verticle-line {
